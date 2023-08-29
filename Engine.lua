@@ -3,6 +3,10 @@ local Engine = {Globals = {}, Utilities = {}, Functions = {},}
 
 local LogDebug = true
 
+Engine.Globals.GetPlayers = function()
+    return Engine.Functions.GetDataModule("Players")
+end
+
 Engine.Globals.GetWorkspace = function()
     return Engine.Functions.GetDataModule("Workspace")
 end
