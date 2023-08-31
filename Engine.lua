@@ -1,29 +1,29 @@
 
-local Engine = {Globals = {}, Utilities = {}, Functions = {},}
+local Engine = {Modules = {}, Utilities = {}, Functions = {},}
 
 local LogDebug = true
 
-Engine.Globals.GetPlayers = function()
+Engine.Modules.GetPlayers = function()
     return Engine.Functions.GetDataModule("Players")
 end
 
-Engine.Globals.GetWorkspace = function()
+Engine.Modules.GetWorkspace = function()
     return Engine.Functions.GetDataModule("Workspace")
 end
 
-Engine.Globals.GetGuiService = function()
+Engine.Modules.GetGuiService = function()
     return Engine.Functions.GetDataModule("GuiService")
 end
 
-Engine.Globals.GetRunService = function()
+Engine.Modules.GetRunService = function()
     return Engine.Functions.GetDataModule("RunService")
 end
 
-Engine.Globals.GetStarterGui = function()
+Engine.Modules.GetStarterGui = function()
     return Engine.Functions.GetDataModule("StarterGui")
 end
 
-Engine.Globals.GetUserInputService = function()
+Engine.Modules.GetUserInputService = function()
     return Engine.Functions.GetDataModule("UserInputService")
 end
 
@@ -31,7 +31,7 @@ Engine.Globals.GetReplicatedStorage = function()
     return Engine.Functions.GetDataModule("ReplicatedStorage")
 end
 
-Engine.Globals.GetVirtualInputManager = function()
+Engine.Modules.GetVirtualInputManager = function()
     return Engine.Functions.GetDataModule("VirtualInputManager")
 end
 
